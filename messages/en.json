@@ -1,0 +1,245 @@
+{
+  "HomePage": {
+    "title": "WeShareCozy",
+    "subtitle": "Home-sharing and subrental listings in Istanbul",
+    "cta": "Browse listings",
+    "publishCta": "Publish a listing",
+    "browseCta": "Browse listings",
+    "roomTypesHeading": "Find the setup that fits",
+    "browseByDistrict": "Browse by district"
+  },
+  "SiteHeader": {
+    "publish": "Publish a listing",
+    "browse": "Browse listings",
+    "myListings": "My listings",
+    "messages": "Messages",
+    "assistant": "Assistant",
+    "admin": "Admin",
+    "signup": "Sign up",
+    "login": "Log in",
+    "welcome": "Welcome, {name}",
+    "signOut": "Sign out"
+  },
+  "SiteFooter": {
+    "tagline": "WeShareCozy — home-sharing and subrental listings in Istanbul."
+  },
+  "Signup": {
+    "title": "Create your account",
+    "displayNameLabel": "Display name",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "genderLabel": "Gender (used only for flatmate-matching filters)",
+    "genderUnspecified": "Prefer not to say",
+    "genderFemale": "Female",
+    "genderMale": "Male",
+    "consentLabel": "I have read and agree to the Terms of Service and Privacy Policy, and consent to the processing of my personal data as described (KVKK).",
+    "submit": "Create account"
+  },
+  "Login": {
+    "title": "Log in",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "submit": "Log in"
+  },
+  "VerifyPhone": {
+    "title": "Verify your phone number",
+    "phoneLabel": "Phone number",
+    "requestCode": "Send code",
+    "codeLabel": "Verification code",
+    "verify": "Verify",
+    "devCodeNotice": "Dev mode: no SMS is sent. Check the server console for the code.",
+    "devCodeValue": "Dev code: {code}"
+  },
+  "CreateListing": {
+    "title": "Publish a listing",
+    "typeLabel": "Listing type",
+    "type": {
+      "ROOM_IN_SHARED_FLAT": "Room in a shared flat",
+      "WHOLE_FLAT_SUBLET": "Whole flat sublet",
+      "SHORT_TERM_SUBLET": "Short-term sublet",
+      "FLATMATE_WANTED": "Flatmate wanted"
+    },
+    "districtLabel": "District",
+    "neighborhoodLabel": "Neighborhood",
+    "titleTrLabel": "Title (Turkish)",
+    "titleEnLabel": "Title (English)",
+    "descriptionTrLabel": "Description (Turkish)",
+    "descriptionEnLabel": "Description (English)",
+    "rentLabel": "Monthly rent (TRY)",
+    "depositLabel": "Deposit (TRY)",
+    "roomCountLabel": "Room count",
+    "genderPreferenceLabel": "Gender preference",
+    "genderPreference": {
+      "ANY": "Any",
+      "FEMALE_ONLY": "Female only",
+      "MALE_ONLY": "Male only"
+    },
+    "rulesSectionHeading": "Rules & details",
+    "aboutLabel": "About this place (optional -- house rules, extra notes)",
+    "depositReturnPolicyLabel": "Deposit return policy",
+    "contractAvailableLabel": "I can provide a rental contract",
+    "billsLabel": "Bills",
+    "billsStatus": {
+      "INCLUDED": "Included",
+      "EXCLUDED": "Excluded",
+      "PARTIAL": "Partially included"
+    },
+    "locationLabel": "Exact location (click the map to set the pin)",
+    "locationHint": "Click on the map to set the exact location. Only an approximate, offset pin is ever shown publicly.",
+    "locationSelected": "Selected: {lat}, {lng}",
+    "fullAddressLabel": "Full address (optional, never shown publicly)",
+    "photosLabel": "Photos (up to 15 -- large photos are compressed automatically)",
+    "tooManyPhotos": "You can upload up to {max} photos",
+    "photoTooLarge": "{name} is still too large after compression -- try a different photo",
+    "photoTooLargeToProcess": "{name} is too large to process -- try a smaller file",
+    "consentLabel": "I have read and agree to the listing terms and consent to the processing of my personal data as described (KVKK).",
+    "commissionLabel": "I agree to pay WeShareCozy a 3% commission on the total value of any subrental successfully arranged through this listing.",
+    "submit": "Publish listing",
+    "submitCreateAccountAndPublish": "Create account & publish listing",
+    "accountSectionHeading": "Create your account to publish",
+    "accountSectionHint": "You'll need an account to publish a listing. Fill this in along with your listing below -- we'll create your account when you submit.",
+    "accountFieldsInvalid": "Please check your account details above",
+    "phoneStepIntro": "Almost done -- verify your phone number to finish publishing. Your listing details are saved.",
+    "photosRequired": "At least one photo is required",
+    "formHasErrors": "Please fix the highlighted fields before publishing",
+    "photoProcessingError": "Could not read an image. Please choose JPEG, PNG or WebP photos."
+  },
+  "ListingDetail": {
+    "rent": "Rent",
+    "deposit": "Deposit",
+    "roomCount": "Rooms",
+    "reviewCount": "{count} reviews",
+    "aboutHeading": "About this place",
+    "rulesHeading": "Good to know",
+    "depositReturnLabel": "Deposit return",
+    "contractAvailableLabel": "Rental contract",
+    "contractAvailableYes": "Available",
+    "contractAvailableNo": "Not available",
+    "billsLabel": "Bills"
+  },
+  "Search": {
+    "title": "Listings in {district}",
+    "titleAll": "All listings",
+    "empty": "No listings in this district yet.",
+    "emptyAll": "No listings match your filters yet.",
+    "filterDistrict": "District",
+    "filterType": "Type",
+    "filterGender": "Gender preference",
+    "filterMinRent": "Min rent (TRY)",
+    "filterMaxRent": "Max rent (TRY)",
+    "filterRooms": "Rooms",
+    "filterAny": "Any",
+    "filterApply": "Apply filters",
+    "filterClear": "Clear filters"
+  },
+  "Admin": {
+    "title": "Admin",
+    "welcome": "Welcome, {name}",
+    "loading": "Loading…",
+    "listingsHeading": "Listings",
+    "noListings": "No listings yet.",
+    "remove": "Remove",
+    "usersHeading": "Users",
+    "noUsers": "No users yet.",
+    "messagePlaceholder": "Write a message…",
+    "send": "Send",
+    "messageSent": "Message sent."
+  },
+  "Messages": {
+    "title": "Messages",
+    "loading": "Loading…",
+    "empty": "No messages yet."
+  },
+  "Interest": {
+    "heading": "Interested in this place?",
+    "nameLabel": "Your name",
+    "contactLabel": "Email or phone",
+    "consentLabel": "I consent to WeShareCozy sharing my name and contact info with the host, and to the processing of my personal data as described (KVKK).",
+    "submit": "Send interest request"
+  },
+  "Requests": {
+    "loading": "Loading…",
+    "status": {
+      "PENDING": "Waiting for the host to respond.",
+      "DEAL_MADE": "The host confirmed a deal was made!",
+      "NOT_INTERESTED": "The host marked this as not proceeding."
+    },
+    "rateHostHeading": "Rate the host",
+    "thanksForRating": "Thanks for your rating!"
+  },
+  "Rating": {
+    "commentPlaceholder": "Optional comment…",
+    "submit": "Submit rating"
+  },
+  "MyListings": {
+    "title": "My listings",
+    "welcome": "Welcome, {name}",
+    "loading": "Loading…",
+    "empty": "You haven't published any listings yet.",
+    "noRequests": "No interest requests yet.",
+    "dealMade": "Deal made",
+    "notInterested": "Not interested",
+    "rateSeekerHeading": "Rate the seeker",
+    "alreadyRated": "You've already rated this seeker.",
+    "status": {
+      "PENDING": "Pending",
+      "DEAL_MADE": "Deal made",
+      "NOT_INTERESTED": "Not interested"
+    }
+  },
+  "Chat": {
+    "assistantName": "Cozy",
+    "aiLabel": "AI assistant",
+    "disclosure": "Cozy is an AI assistant and can make mistakes. It can't see private messages, exact addresses, or anyone's phone/email. Message content is processed by our AI provider to generate responses.",
+    "openLauncher": "Open chat with Cozy",
+    "close": "Close",
+    "panelLabel": "Chat with Cozy",
+    "pastConversations": "Past conversations",
+    "talkToHuman": "Talk to a person",
+    "inputPlaceholder": "Ask Cozy anything…",
+    "send": "Send",
+    "genericError": "Something went wrong on our end. Want me to connect you with a person?",
+    "feedbackHelpful": "Helpful",
+    "feedbackNotHelpful": "Not helpful",
+    "helpArticleLinkHint": "Read the full article",
+    "escalationTicketCreated": "Escalated to a human agent (ticket {ticketId}) -- they'll follow up soon.",
+    "activitySearchListings": "Searching listings…",
+    "activitySearchListingsIn": "Searching listings in {where}…",
+    "activityGetListingDetails": "Looking up listing details…",
+    "activityGetHelpArticle": "Checking the help center…",
+    "activityEscalate": "Connecting you with a person…",
+    "activityGeneric": "Working on it…",
+    "starterHeading": "Try asking:",
+    "starterFindRoom": "Find me a room in Kadıköy under 25,000 TRY",
+    "starterHowItWorks": "How does WeShareCozy work?",
+    "starterSafety": "How do I stay safe when renting?",
+    "starterSimilarListings": "Are there similar listings nearby?",
+    "starterAskAboutListing": "What's the gender preference for this listing?",
+    "starterHelpFlow": "How do I contact the host?",
+    "starterRefineSearch": "Show me cheaper options in this district",
+    "starterBudget": "What's available under 20,000 TRY here?",
+    "escalationFormSubjectLabel": "Subject",
+    "escalationFormDescriptionLabel": "What's going on?",
+    "escalationFormEmailLabel": "Contact email (optional)",
+    "escalationFormSubmit": "Send to a human",
+    "escalationFormSubmitting": "Sending…",
+    "escalationFormCancel": "Cancel",
+    "escalationFormConfirmation": "Thanks -- a team member will follow up soon. Ticket reference: {ticketId}.",
+    "escalationFormBackToChat": "Back to chat"
+  },
+  "Assistant": {
+    "title": "Assistant conversations",
+    "loading": "Loading…",
+    "empty": "No conversations with Cozy yet.",
+    "untitled": "Conversation",
+    "messageCount": "{count} messages",
+    "viewTranscript": "View transcript",
+    "hideTranscript": "Hide transcript",
+    "delete": "Delete",
+    "status": {
+      "ACTIVE": "Active",
+      "ESCALATED": "Escalated to a human",
+      "CLOSED": "Closed"
+    }
+  }
+}

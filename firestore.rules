@@ -1,0 +1,112 @@
+rules_version = '2';
+
+// Deny-by-default. Nearly all writes route through Server Actions using the
+// Admin SDK, which bypasses these rules entirely by design. These rules exist
+// as a defense-in-depth backstop against direct client access, not as the
+// primary authorization mechanism — authorization happens in src/actions/.
+//
+// Collections are added here phase-by-phase as they're introduced; see
+// CLAUDE.md for the public/private doc-split pattern used for sensitive data.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Seeded reference data (scripts/seed-districts.ts, Admin SDK only).
+    match /districts/{districtId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Public profile — no email/phone/exact-location fields live here.
+    match /users/{uid} {
+      allow read: if true;
+      allow write: if false;
+
+      // Sensitive contact fields, readable only by the owner. Written only by
+      // Server Actions via the Admin SDK, which bypasses this rule entirely.
+      match /private/{document} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+        allow write: if false;
+      }
+
+      // KVKK consent audit trail, owner-only read.
+      match /consents/{consentId} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+        allow write: if false;
+      }
+    }
+
+    // OTP stub state — never client-readable, not even by the owner. The client
+    // never sees the code; it's logged server-side by src/lib/otp/send-otp.ts.
+    match /phoneVerifications/{uid} {
+      allow read, write: if false;
+    }
+
+    // Public listing fields only — jitteredLat/Lng, never exact coordinates.
+    match /listings/{listingId} {
+      allow read: if true;
+      allow write: if false;
+
+      // Exact address. Never directly client-readable, not even by the owner —
+      // a future Server Action reveals it only once a message thread exists
+      // between the parties (messaging is out of scope for this v1 slice).
+      match /private/{document} {
+        allow read, write: if false;
+      }
+    }
+
+    // Admin -> user messages. Owner-only read; written only via the admin
+    // send-message Server Action, which authorizes the caller with requireAdmin.
+    match /adminMessages/{uid}/messages/{messageId} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Interest requests (seeker -> host contact). Fully locked, same as
+    // phoneVerifications -- the seeker has no account/auth, so their only way
+    // to read their own request's status is the token-gated Server Action,
+    // never a direct client read.
+    match /interestRequests/{requestId} {
+      allow read, write: if false;
+    }
+
+    // AI chat assistant. Fully locked -- all reads/writes go through the
+    // /api/chat route handler using the Admin SDK, which already enforces
+    // per-collection visibility (a user's own conversations only, etc.)
+    // before ever touching Firestore. No rule here can express "this
+    // caller's own conversation" any more precisely than "no direct access."
+    match /aiConversations/{conversationId} {
+      allow read, write: if false;
+
+      match /messages/{messageId} {
+        allow read, write: if false;
+      }
+    }
+
+    match /aiFeedback/{feedbackId} {
+      allow read, write: if false;
+    }
+
+    match /aiUsageDaily/{usageId} {
+      allow read, write: if false;
+    }
+
+    match /supportTickets/{ticketId} {
+      allow read, write: if false;
+    }
+
+    // Member-only reads and all writes are authorized in inbox Server Actions.
+    match /threads/{threadId} {
+      allow read, write: if false;
+      match /messages/{messageId} { allow read, write: if false; }
+    }
+    match /listingReports/{reportId} { allow read, write: if false; }
+
+    // Rolling per-user/per-session timestamp windows for chat rate limiting.
+    match /rateLimitCounters/{key} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

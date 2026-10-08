@@ -1,0 +1,245 @@
+{
+  "HomePage": {
+    "title": "WeShareCozy",
+    "subtitle": "İstanbul'da ev paylaşımı ve kirasında kiralama ilanları",
+    "cta": "İlanlara göz at",
+    "publishCta": "İlan yayınla",
+    "browseCta": "İlanlara göz at",
+    "roomTypesHeading": "Size uygun seçeneği bulun",
+    "browseByDistrict": "İlçeye göre göz at"
+  },
+  "SiteHeader": {
+    "publish": "İlan yayınla",
+    "browse": "İlanlara göz at",
+    "myListings": "İlanlarım",
+    "messages": "Mesajlar",
+    "assistant": "Asistan",
+    "admin": "Yönetici",
+    "signup": "Hesap oluştur",
+    "login": "Giriş yap",
+    "welcome": "Hoş geldin, {name}",
+    "signOut": "Çıkış yap"
+  },
+  "SiteFooter": {
+    "tagline": "WeShareCozy — İstanbul'da ev paylaşımı ve kirasında kiralama ilanları."
+  },
+  "Signup": {
+    "title": "Hesap oluştur",
+    "displayNameLabel": "Görünen ad",
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "genderLabel": "Cinsiyet (yalnızca ev arkadaşı eşleştirme filtrelerinde kullanılır)",
+    "genderUnspecified": "Belirtmek istemiyorum",
+    "genderFemale": "Kadın",
+    "genderMale": "Erkek",
+    "consentLabel": "Kullanım Koşulları ve Gizlilik Politikası'nı okudum, kabul ediyorum ve kişisel verilerimin açıklandığı şekilde işlenmesine (KVKK) onay veriyorum.",
+    "submit": "Hesap oluştur"
+  },
+  "Login": {
+    "title": "Giriş yap",
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "submit": "Giriş yap"
+  },
+  "VerifyPhone": {
+    "title": "Telefon numaranızı doğrulayın",
+    "phoneLabel": "Telefon numarası",
+    "requestCode": "Kod gönder",
+    "codeLabel": "Doğrulama kodu",
+    "verify": "Doğrula",
+    "devCodeNotice": "Geliştirme modu: SMS gönderilmez. Kod için sunucu konsoluna bakın.",
+    "devCodeValue": "Geliştirme kodu: {code}"
+  },
+  "CreateListing": {
+    "title": "İlan yayınla",
+    "typeLabel": "İlan türü",
+    "type": {
+      "ROOM_IN_SHARED_FLAT": "Paylaşımlı evde oda",
+      "WHOLE_FLAT_SUBLET": "Evin tamamı kirasında kiralama",
+      "SHORT_TERM_SUBLET": "Kısa süreli kirasında kiralama",
+      "FLATMATE_WANTED": "Ev arkadaşı aranıyor"
+    },
+    "districtLabel": "İlçe",
+    "neighborhoodLabel": "Mahalle",
+    "titleTrLabel": "Başlık (Türkçe)",
+    "titleEnLabel": "Başlık (İngilizce)",
+    "descriptionTrLabel": "Açıklama (Türkçe)",
+    "descriptionEnLabel": "Açıklama (İngilizce)",
+    "rentLabel": "Aylık kira (TRY)",
+    "depositLabel": "Depozito (TRY)",
+    "roomCountLabel": "Oda sayısı",
+    "genderPreferenceLabel": "Cinsiyet tercihi",
+    "genderPreference": {
+      "ANY": "Fark etmez",
+      "FEMALE_ONLY": "Sadece kadın",
+      "MALE_ONLY": "Sadece erkek"
+    },
+    "rulesSectionHeading": "Kurallar ve ayrıntılar",
+    "aboutLabel": "Bu mekân hakkında (isteğe bağlı -- ev kuralları, ek notlar)",
+    "depositReturnPolicyLabel": "Depozito iade politikası",
+    "contractAvailableLabel": "Kira sözleşmesi sunabilirim",
+    "billsLabel": "Faturalar",
+    "billsStatus": {
+      "INCLUDED": "Dahil",
+      "EXCLUDED": "Dahil değil",
+      "PARTIAL": "Kısmen dahil"
+    },
+    "locationLabel": "Tam konum (iğneyi ayarlamak için haritaya tıklayın)",
+    "locationHint": "Tam konumu ayarlamak için haritaya tıklayın. Herkese açık olarak yalnızca yaklaşık, kaydırılmış bir iğne gösterilir.",
+    "locationSelected": "Seçildi: {lat}, {lng}",
+    "fullAddressLabel": "Tam adres (isteğe bağlı, herkese açık gösterilmez)",
+    "photosLabel": "Fotoğraflar (en fazla 15 -- büyük fotoğraflar otomatik olarak sıkıştırılır)",
+    "tooManyPhotos": "En fazla {max} fotoğraf yükleyebilirsiniz",
+    "photoTooLarge": "{name} sıkıştırmadan sonra hâlâ çok büyük -- başka bir fotoğraf deneyin",
+    "photoTooLargeToProcess": "{name} işlenemeyecek kadar büyük -- daha küçük bir dosya deneyin",
+    "consentLabel": "İlan koşullarını okudum, kabul ediyorum ve kişisel verilerimin açıklandığı şekilde işlenmesine (KVKK) onay veriyorum.",
+    "commissionLabel": "Bu ilan üzerinden başarıyla gerçekleşen her kirasında kiralama işleminin toplam değerinin %3'ünü WeShareCozy'ye ödemeyi kabul ediyorum.",
+    "submit": "İlanı yayınla",
+    "submitCreateAccountAndPublish": "Hesap oluştur ve ilanı yayınla",
+    "accountSectionHeading": "Yayınlamak için hesap oluşturun",
+    "accountSectionHint": "İlan yayınlamak için bir hesaba ihtiyacınız var. Bunu aşağıdaki ilan bilgilerinizle birlikte doldurun -- gönderdiğinizde hesabınızı oluşturacağız.",
+    "accountFieldsInvalid": "Lütfen yukarıdaki hesap bilgilerinizi kontrol edin",
+    "phoneStepIntro": "Neredeyse bitti -- yayınlamayı tamamlamak için telefon numaranızı doğrulayın. İlan bilgileriniz kaydedildi.",
+    "photosRequired": "En az bir fotoğraf gereklidir",
+    "formHasErrors": "Lütfen yayınlamadan önce işaretli alanları düzeltin",
+    "photoProcessingError": "Bir görsel okunamadı. JPEG, PNG veya WebP fotoğrafları seçin."
+  },
+  "ListingDetail": {
+    "rent": "Kira",
+    "deposit": "Depozito",
+    "roomCount": "Oda sayısı",
+    "reviewCount": "{count} değerlendirme",
+    "aboutHeading": "Bu mekân hakkında",
+    "rulesHeading": "Bilmekte fayda var",
+    "depositReturnLabel": "Depozito iadesi",
+    "contractAvailableLabel": "Kira sözleşmesi",
+    "contractAvailableYes": "Mevcut",
+    "contractAvailableNo": "Mevcut değil",
+    "billsLabel": "Faturalar"
+  },
+  "Search": {
+    "title": "{district} ilanları",
+    "titleAll": "Tüm ilanlar",
+    "empty": "Bu ilçede henüz ilan yok.",
+    "emptyAll": "Filtrelerinize uyan ilan yok.",
+    "filterDistrict": "İlçe",
+    "filterType": "Tür",
+    "filterGender": "Cinsiyet tercihi",
+    "filterMinRent": "Min kira (TL)",
+    "filterMaxRent": "Maks kira (TL)",
+    "filterRooms": "Oda sayısı",
+    "filterAny": "Fark etmez",
+    "filterApply": "Filtrele",
+    "filterClear": "Filtreleri temizle"
+  },
+  "Admin": {
+    "title": "Yönetici",
+    "welcome": "Hoş geldin, {name}",
+    "loading": "Yükleniyor…",
+    "listingsHeading": "İlanlar",
+    "noListings": "Henüz ilan yok.",
+    "remove": "Kaldır",
+    "usersHeading": "Kullanıcılar",
+    "noUsers": "Henüz kullanıcı yok.",
+    "messagePlaceholder": "Bir mesaj yazın…",
+    "send": "Gönder",
+    "messageSent": "Mesaj gönderildi."
+  },
+  "Messages": {
+    "title": "Mesajlar",
+    "loading": "Yükleniyor…",
+    "empty": "Henüz mesaj yok."
+  },
+  "Interest": {
+    "heading": "Bu yerle ilgileniyor musunuz?",
+    "nameLabel": "Adınız",
+    "contactLabel": "E-posta veya telefon",
+    "consentLabel": "WeShareCozy'nin adımı ve iletişim bilgilerimi ev sahibiyle paylaşmasına ve kişisel verilerimin açıklandığı şekilde işlenmesine (KVKK) onay veriyorum.",
+    "submit": "İlgi talebi gönder"
+  },
+  "Requests": {
+    "loading": "Yükleniyor…",
+    "status": {
+      "PENDING": "Ev sahibinin yanıtı bekleniyor.",
+      "DEAL_MADE": "Ev sahibi anlaşmanın gerçekleştiğini onayladı!",
+      "NOT_INTERESTED": "Ev sahibi bu talebi ilerletmeme olarak işaretledi."
+    },
+    "rateHostHeading": "Ev sahibini değerlendirin",
+    "thanksForRating": "Değerlendirmeniz için teşekkürler!"
+  },
+  "Rating": {
+    "commentPlaceholder": "İsteğe bağlı yorum…",
+    "submit": "Değerlendirmeyi gönder"
+  },
+  "MyListings": {
+    "title": "İlanlarım",
+    "welcome": "Hoş geldin, {name}",
+    "loading": "Yükleniyor…",
+    "empty": "Henüz bir ilan yayınlamadınız.",
+    "noRequests": "Henüz ilgi talebi yok.",
+    "dealMade": "Anlaşma sağlandı",
+    "notInterested": "İlgilenmiyor",
+    "rateSeekerHeading": "Talep sahibini değerlendirin",
+    "alreadyRated": "Bu talep sahibini zaten değerlendirdiniz.",
+    "status": {
+      "PENDING": "Bekliyor",
+      "DEAL_MADE": "Anlaşma sağlandı",
+      "NOT_INTERESTED": "İlgilenmiyor"
+    }
+  },
+  "Chat": {
+    "assistantName": "Cozy",
+    "aiLabel": "Yapay zeka asistanı",
+    "disclosure": "Cozy bir yapay zeka asistanıdır ve hata yapabilir. Özel mesajları, tam adresleri veya kimsenin telefon/e-postasını göremez. Mesaj içeriği yanıt oluşturmak için yapay zeka sağlayıcımız tarafından işlenir.",
+    "openLauncher": "Cozy ile sohbeti aç",
+    "close": "Kapat",
+    "panelLabel": "Cozy ile sohbet",
+    "pastConversations": "Geçmiş konuşmalar",
+    "talkToHuman": "Bir kişiyle görüş",
+    "inputPlaceholder": "Cozy'ye bir şey sor…",
+    "send": "Gönder",
+    "genericError": "Bir şeyler ters gitti. Sizi bir ekip üyesiyle bağlayayım mı?",
+    "feedbackHelpful": "Yardımcı oldu",
+    "feedbackNotHelpful": "Yardımcı olmadı",
+    "helpArticleLinkHint": "Makalenin tamamını okuyun",
+    "escalationTicketCreated": "Bir ekip üyesine bağlandı (talep {ticketId}) -- yakında geri dönüş yapacaklar.",
+    "activitySearchListings": "İlanlar aranıyor…",
+    "activitySearchListingsIn": "{where} bölgesinde ilanlar aranıyor…",
+    "activityGetListingDetails": "İlan detayları inceleniyor…",
+    "activityGetHelpArticle": "Yardım merkezi kontrol ediliyor…",
+    "activityEscalate": "Bir kişiye bağlanılıyor…",
+    "activityGeneric": "Üzerinde çalışılıyor…",
+    "starterHeading": "Şunları deneyin:",
+    "starterFindRoom": "Kadıköy'de 25.000 TL altında bir oda bul",
+    "starterHowItWorks": "WeShareCozy nasıl çalışır?",
+    "starterSafety": "Kiralarken nasıl güvende kalabilirim?",
+    "starterSimilarListings": "Yakınlarda benzer ilanlar var mı?",
+    "starterAskAboutListing": "Bu ilan için cinsiyet tercihi nedir?",
+    "starterHelpFlow": "Ev sahibiyle nasıl iletişime geçerim?",
+    "starterRefineSearch": "Bu ilçede daha ucuz seçenekler göster",
+    "starterBudget": "Burada 20.000 TL altında neler var?",
+    "escalationFormSubjectLabel": "Konu",
+    "escalationFormDescriptionLabel": "Neler oluyor?",
+    "escalationFormEmailLabel": "İletişim e-postası (isteğe bağlı)",
+    "escalationFormSubmit": "Bir kişiye gönder",
+    "escalationFormSubmitting": "Gönderiliyor…",
+    "escalationFormCancel": "Vazgeç",
+    "escalationFormConfirmation": "Teşekkürler -- bir ekip üyesi yakında geri dönüş yapacak. Talep referansı: {ticketId}.",
+    "escalationFormBackToChat": "Sohbete dön"
+  },
+  "Assistant": {
+    "title": "Asistan konuşmaları",
+    "loading": "Yükleniyor…",
+    "empty": "Cozy ile henüz bir konuşma yok.",
+    "untitled": "Konuşma",
+    "messageCount": "{count} mesaj",
+    "viewTranscript": "Kaydı görüntüle",
+    "hideTranscript": "Kaydı gizle",
+    "delete": "Sil",
+    "status": {
+      "ACTIVE": "Aktif",
+      "ESCALATED": "Bir kişiye bağlandı",
+      "CLOSED": "Kapalı"
+    }
+  }
+}
